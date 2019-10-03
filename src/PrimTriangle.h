@@ -22,35 +22,25 @@ public:
 
 	virtual bool Intersect(Ray &ray) override
 	{
-		Vec3f nab, nbc, nca, normal;
-		float sum, l1, l2, l3, d1, d2, t;
+		// --- PUT YOUR CODE HERE ---
+		Vec3f aa, bb, cc, p;
+		aa = (m_b - ray.org).cross(m_a - ray.org);
+		bb = (m_c - ray.org).cross(m_b - ray.org);
+		cc = (m_a - ray.org).cross(m_c - ray.org);
 
-		nab = (v_y - ray.org).cross(v_x - ray.org);
-		nbc = (v_z - ray.org).cross(v_y - ray.org);
-		nca = (v_x - ray.org).cross(v_z - ray.org);
+		float s_area = aa.dot(ray.dir) + bb.dot(ray.dir) + cc.dot(ray.dir);
+		float X = aa.dot(ray.dir) / s_area;
+		float Y = bb.dot(ray.dir) / s_area;
+		float Z = cc.dot(ray.dir) / s_area;
 
-		sum = nab.dot(ray.dir) + nbc.dot(ray.dir) + nca.dot(ray.dir);
-		l1 = nab.dot(ray.dir) / sum;
-		l2 = nbc.dot(ray.dir) / sum;
-		l3 = nca.dot(ray.dir) / sum;
-
-		if (l1 < 0 || l2 < 0 || l3 < 0)
-			return false;
-		normal = (v_y - v_x).cross(v_z - v_x);
-		d1 = -normal.dot(ray.org - v_x);
-		d2 = normal.dot(ray.dir);
-		if (d2 == 0)
+		if (X < 0 || Y < 0 || Z < 0)
 		{
 			return false;
 		}
-		else
-		{
-			t = d1 / d2;
-		}
+		p = X * m_a + Y * m_b + Z * m_c;
+		float t = p[0] / ray.dir[0];
 		if (t < Epsilon || t > ray.t)
-		{
 			return false;
-		}
 		ray.t = t;
 		return true;
 	}

@@ -21,36 +21,26 @@ public:
 
 	virtual bool Intersect(Ray &ray) override
 	{
-		float x, y, z, w;
+		// --- PUT YOUR CODE HERE ---
+		float x, y, z;
 		x = ray.dir.dot(ray.dir);
 		y = 2 * ray.dir.dot(ray.org - m_center);
-		z=ray.org - m_center).dot(ray.org - m_center) - m_radius * m_radius;
-		w = (y * y) - 4 * x * z;
+		z = (ray.org - m_center).dot(ray.org - m_center) - m_radius * m_radius;
 
-		if (w < 0)
+		float testValue = y * y - (4 * x * z);
+		if (testValue < 0)
 		{
 			return false;
 		}
 
-		float a, b;
+		float t = ((-y) + sqrt(testValue)) / x;
 
-		a = ((-y) + sqrt(w)) / 2 * z;
-		b = ((-y) - sqrt(w)) / 2 * z;
-		if ((a < Epsilon && b < Epsilon) || (a > ray.t && b > ray.t))
+		if (t < Epsilon || t > ray.t)
 		{
 			return false;
 		}
 
-		// find the smallest value a
-		if (a < b)
-		{
-			ray.t = a;
-		}
-		else
-		{
-			ray.t = b;
-		}
-
+		ray.t = t;
 		return true;
 	}
 
