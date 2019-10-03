@@ -1,6 +1,14 @@
 - **Keshav Kumar Singh**
 - **Ayesha Naeem**
 
+##References
+
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.scratchapixel.com%2Flessons%2F3d-basic-rendering%2Fminimal-ray-tracer-rendering-simple-shapes%2Fray-plane-and-ray-disk-intersection%3Ffbclid%3DIwAR1SmkNUMlfIExNXpCFAQlacuGNVTOKbkTOd79-M7EATh2I7H_GWdtrXz8w&h=AT1NOSuh5i-iFi6SB3rTL5r0K_OBSTs0z_EUT_-Cb2zhVU0B57pTlmx9Ja_zAGqWyzbf5MwSAALvmnr_V41TYZGNExw8h3pCvDVduq9H52hz7mwZ7MTFcFLC_dzaih4JJSy0dcy7KPI
+
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.scratchapixel.com%2Flessons%2F3d-basic-rendering%2Fminimal-ray-tracer-rendering-simple-shapes%2Fray-sphere-intersection%3Ffbclid%3DIwAR3X6VyXsuIjuV4jttq8E1_VY7E3mwygriYR_WgJDM2AG402rO8ueVqasOQ&h=AT1NOSuh5i-iFi6SB3rTL5r0K_OBSTs0z_EUT_-Cb2zhVU0B57pTlmx9Ja_zAGqWyzbf5MwSAALvmnr_V41TYZGNExw8h3pCvDVduq9H52hz7mwZ7MTFcFLC_dzaih4JJSy0dcy7KPI
+
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.scratchapixel.com%2Flessons%2F3d-basic-rendering%2Fray-tracing-rendering-a-triangle%2Fray-triangle-intersection-geometric-solution%3Ffbclid%3DIwAR0NzStpB_oXQYgycxm9e20tcHxAxtOGrSYDjzZddAxo17qU2ySq5JC0ltc&h=AT1NOSuh5i-iFi6SB3rTL5r0K_OBSTs0z_EUT_-Cb2zhVU0B57pTlmx9Ja_zAGqWyzbf5MwSAALvmnr_V41TYZGNExw8h3pCvDVduq9H52hz7mwZ7MTFcFLC_dzaih4JJSy0dcy7KPI
+
 # Practical Assignment 1
 
 ## Problem 1.3
